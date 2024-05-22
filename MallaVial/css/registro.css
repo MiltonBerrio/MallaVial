@@ -1,0 +1,150 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(../imagenes/fondo\ entrada2.jpg); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el cuerpo cubra la altura completa de la ventana */
+}
+
+/* Estilos para el contenedor del formulario */
+.container {
+    padding: 40px;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Estilos para el encabezado */
+h2 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Estilos para los grupos de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Estilos para los campos de entrada de texto y contraseña */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+/* Cambiar el color del borde y añadir sombra cuando el campo está enfocado */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Estilos para el botón */
+button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+/* Cambiar el color de fondo del botón al pasar el ratón sobre él */
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Estilos para el botón cuando está desactivado */
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+/* Estilos para el mensaje */
+#message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ff0000;
+}
+
+/* Estilos para el ícono de mostrar contraseña */
+.password-toggle {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: #333;
+}
+
+/* Contenedor relativo para el campo de contraseña */
+.form-group.position-relative {
+    position: relative;
+}
+
+/* Estilos para la solicitud de registro */
+#requestAdminContainer button {
+    background-color: #f70000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#requestAdminContainer button:hover {
+    background-color: #f8f8f8;
+    color: #f70000;
+    transform: translateY(-2px);
+}

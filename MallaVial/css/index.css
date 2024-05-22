@@ -1,0 +1,213 @@
+/* Establece el modelo de caja y los márgenes y rellenos predeterminados */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+  font-family: "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: #999;
+}
+
+/* Elimina las viñetas de las listas */
+ul {
+  list-style: none;
+}
+
+/* Estilos para los encabezados */
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+
+/* Estilos para los enlaces */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos para los párrafos */
+p {
+  margin: 0.5rem 0;
+}
+
+/* Estilos para la sección de vitrina */
+.showcase {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url('../imagenes/fondos.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pseudoelemento para superponer una capa semitransparente */
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.65);
+  box-shadow: inset 30px 10px 150px #000000;
+}
+
+/* Estilos para el contenido de la vitrina */
+.showcase-content {
+  position: relative;
+  z-index: 2;
+  width: 80%; /* Ajustamos el ancho al 80% del contenedor */
+  max-width: 600px; /* Limitamos el ancho máximo */
+  background: rgba(0, 0, 0, 0.8); /* Reducimos la opacidad para una apariencia más clara */
+  margin: 0 auto; /* Centramos horizontalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centramos verticalmente */
+  align-items: center; /* Centramos horizontalmente */
+  text-align: center; /* Alineamos el texto al centro */
+  padding: 40px; /* Reducimos el relleno */
+  border-radius: 16px;
+}
+
+/* Estilos para el título del formulario */
+.formm h1 {
+  margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+.formm {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* Estilos para la información adicional del formulario */
+.formm .info {
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el campo de correo electrónico */
+.formm .info .email,
+.formm .info .password {
+  margin-bottom: 20px; /* Reducimos el espacio entre los campos */
+  width: 100%;
+  height: 40px; /* Reducimos la altura de los campos */
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 16px; /* Ajustamos el tamaño de fuente */
+}
+
+/* Estilos para los botones del formulario */
+.formm .btn {
+  margin-top: 20px; /* Aumentamos el espacio sobre los botones */
+  width: 100%;
+}
+
+/* Estilos para el botón primario */
+.btn-primary {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background: #007bff;
+  color: #fff;
+  font-size: inherit;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+
+/* Estilos para la sección de ayuda */
+.help {
+  margin-top: 20px; /* Aumentamos el espacio sobre la sección de ayuda */
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+/* Estilos para los enlaces de ayuda */
+.help a {
+  color: #999;
+}
+
+/* Estilos para los enlaces de ayuda al pasar el ratón */
+.help a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para los campos de entrada */
+input[type="checkbox"] {
+  background: #737373;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 0;
+  height: 16px;
+  left: -20px;
+  width: 16px;
+  margin-right: 5px;
+}
+
+/* Estilos para el campo de correo electrónico */
+input[type="email"] {
+  background: #343434;
+}
+
+/* Estilos para el campo de contraseña */
+input[type="password"] {
+  background: #343434;
+}
+
+/* Estilos para la sección de registro */
+.signup {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Estilos para los párrafos dentro de la sección de registro */
+.signup p {
+  margin-right: 5px;
+}
+
+/* Estilos adicionales */
+.more {
+  font-size: 0.8em;
+  line-height: 1.1em;
+}
+
+/* Estilos para los enlaces adicionales */
+.more a {
+  color: rgb(17, 108, 228);
+}
+
+/* Estilos para los enlaces adicionales al pasar el ratón */
+.more a:hover,
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 8px; /* Aumentamos el ancho de la barra de desplazamiento */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #496989;
+  border-radius: 10px;
+  border: 1px solid #496989;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
